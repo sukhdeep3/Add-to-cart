@@ -7,9 +7,6 @@ const Cart = (props) =>{
     // const arr =[1,2,3,4,5]
     return(
         <div>
-            {/* {arr.map((item)=>{
-                return item +5;  the way to iterate the array items
-            })} */}
             
             {products.map((product)=>{
                 return (
