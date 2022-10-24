@@ -14,7 +14,7 @@ code {
 .cart-item{
   display: flex;
   flex-direction: row;
-  margin: 2rem;
+  margin: 1.8rem;
 }
 .left-block{
   margin-right: 1.5rem;

@@ -4,7 +4,6 @@ import CartItem from './CartItem';
 const Cart = (props) =>{
 
     const {products} =props;
-    // const arr =[1,2,3,4,5]
     return(
         <div>
             

@@ -1,73 +1,7 @@
 import React from 'react';
 
 const CartItem = (props)=> {
-                                                // constructor(){
-                                                //     super();
-                                                //     this.state ={    don't need state due to props
-                                                //         price: 999,
-                                                //         title: 'Mobile Phone',
-                                                //         qty: 1,
-                                                //         img: ''
-                                                //     }
-                                                //     // this.testing();
-                                                //    // this.increaseQuantity = this.increaseQuantity.bind(this);
-                                                // }
-
-
-                                                                    // testing(){
-                                                                    //     const promise =new Promise((resolve, reject) =>{
-                                                                    //         setTimeout(()=>{
-                                                                    //             resolve('done');
-                                                                    //         },5000)
-                                                                    //     })
-
-                                                                    //     promise.then(()=>{
-                                                                    //         this.setState({
-                                                                    //             qty: this.state.qty + 10
-                                                                    //         })
-                                                                    //         this.setState({
-                                                                    //             qty: this.state.qty + 10
-                                                                    //         })
-                                                                    //         this.setState({
-                                                                    //             qty: this.state.qty + 10
-                                                                    //         })
-                                                                    //     })
-                                                                    // }
-
-
-
-
-                                            //use arrow function it will automatically bind the this to a function
-                                                // increaseQuantity = () => {
-                                                //     // console.log('this.state', this.state);
-                                                //     // setState form 1
-                                                //     // this.setState({
-                                                //     //     qty : this.state.qty +1
-                                                //     // })
-
-                                                //     //setState form 2 -if prevState require
-                                                //     this.setState((prevState) => {
-                                                //         return {
-                                                //             qty : prevState.qty +1
-                                                //         }
-                                                //     })
-                                                // }
-
-                                                // decreaseQuantity =()=>{
-                                                //     const {qty} =this.state;
-                                                //     if(qty===0){
-                                                //         return;
-                                                //     }
-                                                //     this.setState((prevState)=>{
-                                                //         // console.log('hello');
-                                                //         return {
-                                                //             qty : prevState.qty -1
-                                                //         }
-                                                //     })
-                                                // }
-
-    // render (){
-        // this.setState();
+                                        
         const {title, price, qty} =props.product;
         const {
             product, 

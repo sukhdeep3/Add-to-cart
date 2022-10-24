@@ -43,7 +43,6 @@ this.db
 // .where('title', '==', 'Laptop')
 .orderBy('price', 'desc')
 .onSnapshot((snapshot)=>{
-  // console.log(snapshot);
   snapshot.docs.map((doc)=>{
     console.log(doc.data());
   });
@@ -61,13 +60,8 @@ this.db
 
 
 increaseProduct =(product) => {
-    // console.log("Hello", product);
     const {products} = this.state;
     const index =products.indexOf(product);
-    // products[index].qty +=1;
-    // this.setState({
-    //     products
-    // })
 
     const docRef =this.db.collection('products').doc(products[index].id);
 
@@ -83,7 +77,6 @@ increaseProduct =(product) => {
 }
 
 decreaseProduct=(product)=>{
-    // console.log("hello", product);
     const {products}=this.state;
     const index = products.indexOf(product);
     if(products[index].qty===0){
@@ -105,12 +98,6 @@ decreaseProduct=(product)=>{
 }
 
 deleteProduct =(id)=>{
-    // const {products}=this.state;
-    // const items = products.filter((item)=>item.id !==id);
-    
-    // this.setState({
-    //     products :items
-    // })
     const docRef =this.db.collection('products').doc(id);
 
     docRef.delete()
@@ -175,10 +162,7 @@ addProduct =()=>{
     onDeleteProduct={this.deleteProduct}/>
 
   {this.state.loading &&<h1>Loading Products...</h1>}
-    <div style={{ padding:10, fontSize: 20}}>TOTAL: {this.getCartTotal()}</div>
-    <button onClick={this.addUser} className="btn">
-          Add User
-        </button>
+    <div style={{ padding:5, fontSize: 20}}>TOTAL: {this.getCartTotal()}</div>
     
     </div>
   );
